@@ -30,5 +30,4 @@ Abra a pasta no VS Code e use a extensão Live Server, ou publique a pasta intei
 Nome, data, horário, endereço, WhatsApp, texto da confirmação e links ficam no bloco `const convite` no início de `script.js`. Os dados de data/local/telefone foram mantidos do código original fornecido.
 
 
-## Ajuste visual
-O arco-íris foi substituído por um sol de raios em estilo recorte de papel e por uma figurinha de cometa clicável. A figurinha continua fazendo parte do mini-jogo e se transforma em coração amarelo ao ser tocada.
+
