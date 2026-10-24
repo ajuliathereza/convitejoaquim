@@ -565,3 +565,58 @@ body.modal-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .001ms !important; }
 }
+
+/* Conteúdo detalhado das sugestões de presentes */
+.giftItem > div {
+  min-width: 0;
+}
+
+.giftItem ul {
+  margin: 8px 0;
+  padding-left: 18px;
+}
+
+.giftItem li,
+.giftItem p {
+  color: var(--muted);
+  font-size: .76rem;
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.giftItem li + li {
+  margin-top: 7px;
+}
+
+.giftItem p {
+  margin: 7px 0 0;
+}
+
+.giftItem b {
+  color: var(--blue-800);
+  font-weight: 800;
+}
+
+.giftItem small {
+  margin-top: 8px;
+  line-height: 1.45;
+}
+
+.modal__panel {
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+
+@media (max-width: 380px) {
+  .giftItem {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 8px;
+    padding: 9px;
+  }
+
+  .giftItem > span {
+    width: 36px;
+    font-size: 1.2rem;
+  }
+}

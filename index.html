@@ -6,6 +6,42 @@
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#8ccfe9" />
   <meta name="description" content="Joaquim — minha primeira volta ao sol" />
+
+<!-- Prévia do convite ao compartilhar -->
+<meta property="og:type" content="website">
+
+<meta
+  property="og:title"
+  content="Joaquim ☀️ Minha primeira volta ao sol!"
+>
+
+<meta
+  property="og:description"
+  content="Vem celebrar o primeiro aninho do nosso raio de sol! Um dia cheio de amor e alegria."
+>
+
+<meta
+  property="og:url"
+  content="https://joaquim.nexosolutions.site/"
+>
+
+<meta
+  property="og:image"
+  content="https://joaquim.nexosolutions.site/assets/images/whatsapp-preview.jpg"
+>
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta
+  property="og:image:alt"
+  content="Ilustração de um sol amarelo sorridente e o nome Joaquim, que vai fazer 1 aninho."
+>
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+
   <title>Joaquim • Minha primeira volta ao sol</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -462,25 +498,126 @@
     <span class="musicControl__bars" aria-hidden="true"><i></i><i></i><i></i></span>
   </button>
 
-  <div class="modal hidden" id="modalPresentes" role="dialog" aria-modal="true" aria-labelledby="presentesTitle">
-    <button class="modal__backdrop" type="button" data-close="true" aria-label="Fechar sugestões de presentes"></button>
-    <div class="modal__panel">
-      <button class="modal__close" type="button" data-close="true" aria-label="Fechar">×</button>
-      <p class="modal__kicker">Cantinho dos presentes</p>
-      <h2 id="presentesTitle">Sugestões de presentes</h2>
-      <p class="modal__intro">Se quiser levar um mimo, aqui vão algumas ideias:</p>
+ <!-- MODAL DE SUGESTÕES DE PRESENTES -->
+<div class="modal hidden" id="modalPresentes"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="presentesTitle">
 
-      <div class="giftList" role="list">
-        <div class="giftItem" role="listitem"><span><img src="./assets/icons/shoe.svg" alt="" /></span><div><strong>Calçado</strong><small>Tamanho 1 ano ou similar</small></div></div>
-        <div class="giftItem" role="listitem"><span><img src="./assets/icons/shirt.svg" alt="" /></span><div><strong>Roupinhas</strong><small>Tamanho 1 ano</small></div></div>
-        <div class="giftItem" role="listitem"><span><img src="./assets/icons/blocks.svg" alt="" /></span><div><strong>Brinquedos</strong><small>Interativos, criativos ou educativos</small></div></div>
+  <button class="modal__backdrop"
+          type="button"
+          data-close="true"
+          aria-label="Fechar sugestões de presentes">
+  </button>
+
+  <div class="modal__panel">
+
+    <button class="modal__close"
+            type="button"
+            data-close="true"
+            aria-label="Fechar">×</button>
+
+    <p class="modal__kicker">Um mimo para o Joaquim ☀️</p>
+
+    <h2 id="presentesTitle">Sugestões de presentes</h2>
+
+    <p class="modal__intro">
+      Se quiseres presentear nosso pequeno na sua primeira volta ao sol,
+      separamos algumas sugestões com muito carinho.
+      O mais importante é celebrar esse momento com vocês!
+    </p>
+
+    <div class="giftList" role="list">
+
+      <!-- 1. ROUPINHAS -->
+      <div class="giftItem" role="listitem">
+        <span aria-hidden="true">👕</span>
+
+        <div>
+          <strong>1. Roupinhas</strong>
+
+          <ul>
+            <li>
+              <b>Tamanho 18 meses:</b>
+              peças leves para o verão.
+            </li>
+
+            <li>
+              <b>Tamanho 2 anos:</b>
+              peças para os dias mais frios e para crescer usando.
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <p class="modal__note">O melhor presente é ter você com a gente nesse dia tão especial. ☀️</p>
-      <button class="modal__ok" type="button" data-close="true">Combinado!</button>
-    </div>
-  </div>
+      <!-- 2. CALÇADOS -->
+      <div class="giftItem" role="listitem">
+        <span aria-hidden="true">👟</span>
 
+        <div>
+          <strong>2. Calçados</strong>
+
+          <ul>
+            <li>
+              <b>Número 20:</b>
+              especialmente calçados leves de verão.
+            </li>
+
+            <li>
+              <b>Número 21:</b>
+              para usar nos próximos meses.
+            </li>
+          </ul>
+
+          <small>Atualmente, ele usa o número 19.</small>
+        </div>
+      </div>
+
+      <!-- 3. BRINQUEDOS E BRINCADEIRAS -->
+      <div class="giftItem" role="listitem">
+        <span aria-hidden="true">🧸</span>
+
+        <div>
+          <strong>3. Brinquedos e brincadeiras</strong>
+
+          <p>
+            Brinquedos adequados para a idade, livros infantis,
+            brinquedos de encaixe, itens para explorar a natureza
+            e brincar ao ar livre. Temos bastante espaço no sítio
+            para a diversão!
+          </p>
+        </div>
+      </div>
+
+      <!-- 4. RECORDAÇÕES E MEMÓRIAS -->
+      <div class="giftItem" role="listitem">
+        <span aria-hidden="true">📸</span>
+
+        <div>
+          <strong>4. Recordações e memórias</strong>
+
+          <p>
+            Álbuns de fotos, porta-retratos, caixas de recordações,
+            kits para registrar as mãozinhas e os pezinhos e outros
+            mimos para guardar as memórias dessa fase.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="modal__note">
+      O mais importante é celebrar esse momento com vocês! ☀️💛
+    </p>
+
+    <button class="modal__ok"
+            type="button"
+            data-close="true">
+      Combinado!
+    </button>
+
+  </div>
+</div>
   <div class="celebration" id="celebration" aria-hidden="true"></div>
   <script src="./script.js?v=7"></script>
 </body>
