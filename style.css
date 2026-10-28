@@ -295,7 +295,18 @@ button:focus-visible { outline: 3px solid rgba(243, 160, 92, .85); outline-offse
 .placeCard__copy > span { color: #fff5bf; font: 700 .66rem var(--ff-cute); letter-spacing: .08em; text-transform: uppercase; }
 .placeCard h2 { margin: 2px 0 0; color: #fff; font: 800 1rem/1.15 var(--ff-display); overflow-wrap: anywhere; }
 .placeCard p { margin: 4px 0 0; color: rgba(255,255,255,.92); font-size: .73rem; line-height: 1.3; overflow-wrap: anywhere; }
-.miniMapBtn { border: 1px solid rgba(255,255,255,.65); border-radius: 999px; padding: 9px 12px; background: var(--sun-400); color: #295d7b; font: 800 .72rem var(--ff-cute); white-space: nowrap; cursor: pointer; box-shadow: 0 3px 0 rgba(39,96,127,.15); }
+.miniMapBtn {
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 999px;
+  padding: 13px 22px;
+  background: var(--sun-400);
+  color: #295d7b;
+  font: 800 1rem var(--ff-cute);
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 4px 0 rgba(39,96,127,.2);
+  transition: transform .2s ease, filter .2s ease;
+}
 .miniMapBtn:hover { filter: brightness(1.03); transform: translateY(-1px); }
 
 .countdownCard { margin-top: 18px; padding: 18px 12px; border: 1px dashed rgba(91,171,207,.46); border-radius: 24px; background: linear-gradient(180deg, rgba(241,250,255,.97), rgba(218,243,253,.86)); text-align: center; }
