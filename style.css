@@ -250,7 +250,17 @@ button:focus-visible { outline: 3px solid rgba(243, 160, 92, .85); outline-offse
 .envelope.is-flap-open .envelope__seal { transform: translateY(8px) scale(.82); opacity: 0; }
 .envelope.is-letter-out .envelope__letter { opacity: 1; transform: translateY(-58px) scale(1); }
 .envelope.is-letter-out .envelope__shadow { transform: scaleX(1.12); opacity: .65; }
-.envelopeHint { color: var(--blue-700); font: 800 .94rem var(--ff-cute); animation: hint 1.45s ease-in-out infinite; }
+
+.envelopeHint {
+  color: var(--blue-700);
+  font: 800 1.3rem var(--ff-cute);
+  animation: hint 1.45s ease-in-out infinite;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: #fff5bd;
+  border: 2px solid #ffd44f;
+  box-shadow: 0 4px 0 rgba(243, 160, 92, 0.25);
+}
 .sparkleMark { position: relative; display: inline-block; width: 12px; height: 12px; margin-left: 3px; }
 .sparkleMark::before, .sparkleMark::after { content: ""; position: absolute; left: 5px; top: 0; width: 2px; height: 12px; border-radius: 2px; background: var(--orange); }
 .sparkleMark::after { transform: rotate(90deg); }
