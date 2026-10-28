@@ -150,7 +150,9 @@ button:focus-visible { outline: 3px solid rgba(243, 160, 92, .85); outline-offse
   transition: opacity .25s ease;
 }
 /* O poster do vídeo já funciona como capa enquanto o vídeo definitivo não existe. */
-.hero__fallback.is-visible { opacity: 0; }
+.hero__fallback.is-visible {
+  opacity: 1;
+}
 .hero__fallback img { display: none; }
 .hero__fallback strong { font: 800 1.1rem var(--ff-cute); text-align: center; }
 .hero__canopy { display: none; }

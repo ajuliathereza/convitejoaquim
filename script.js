@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     whatsappNumero: "5551981166497",
 
     whatsappMensagem:
-      "Oi! 💛 Vim pelo convite do Joaquim ☀️💙 Quero confirmar minha presença na primeira volta ao sol dele! 🎉\n\nNome: \nQuantidade de pessoas: ",
+      "Oi! Vim pelo convite do Joaquim! Quero confirmar minha presença na primeira volta ao sol dele! \n\nNome: \nQuantidade de pessoas: ",
 
 
     // GOOGLE MAPS
@@ -921,7 +921,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  /* =========================================================
+   /* =========================================================
      SUGESTÕES DE PRESENTES
      ========================================================= */
 
@@ -931,63 +931,80 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    // COPIAR CHAVE PIX
+    const btnCopiarPix = el.modal.querySelector("#copiarPix");
+    const pixKey = el.modal.querySelector("#pixKey");
+    const pixStatus = el.modal.querySelector("#pixStatus");
 
+    btnCopiarPix?.addEventListener("click", async () => {
+
+      const chave = pixKey?.textContent.trim();
+
+      if (!chave) {
+        return;
+      }
+
+      try {
+
+        await navigator.clipboard.writeText(chave);
+
+        if (pixStatus) {
+          pixStatus.textContent = "Chave copiada! 💛";
+        }
+
+        btnCopiarPix.textContent = "✓ Chave copiada!";
+
+      } catch (erro) {
+
+        if (pixStatus) {
+          pixStatus.textContent =
+            "Não foi possível copiar automaticamente. Selecione a chave Pix e copie manualmente.";
+        }
+
+      }
+
+    });
+
+    // ABRIR MODAL
     const abrir = () => {
 
-      el.modal.classList.remove(
-        "hidden"
-      );
+      el.modal.classList.remove("hidden");
 
-
-      document.body.classList.add(
-        "modal-open"
-      );
-
+      document.body.classList.add("modal-open");
 
       el.modal
-        .querySelector(
-          ".modal__close"
-        )
+        .querySelector(".modal__close")
         ?.focus();
 
     };
 
-
+    // FECHAR MODAL
     const fechar = () => {
 
-      el.modal.classList.add(
-        "hidden"
-      );
+      el.modal.classList.add("hidden");
 
-
-      document.body.classList.remove(
-        "modal-open"
-      );
-
+      document.body.classList.remove("modal-open");
 
       el.btnPresentes?.focus();
 
     };
 
-
+    // BOTÃO DE ABRIR
     el.btnPresentes?.addEventListener(
       "click",
       abrir
     );
 
-
+    // FECHAR AO CLICAR NO FUNDO OU NO BOTÃO DE FECHAR
     el.modal.addEventListener(
       "click",
       (event) => {
 
-        const target =
-          event.target;
-
+        const target = event.target;
 
         if (
           target instanceof HTMLElement &&
-          target.dataset.close ===
-            "true"
+          target.dataset.close === "true"
         ) {
 
           fechar();
@@ -997,16 +1014,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     );
 
-
+    // FECHAR COM A TECLA ESC
     document.addEventListener(
       "keydown",
       (event) => {
 
         if (
           event.key === "Escape" &&
-          !el.modal.classList.contains(
-            "hidden"
-          )
+          !el.modal.classList.contains("hidden")
         ) {
 
           fechar();
