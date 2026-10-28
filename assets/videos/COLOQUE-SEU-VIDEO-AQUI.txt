@@ -1,4 +1,0 @@
-Quando o vídeo estiver pronto, coloque-o nesta pasta com o nome exatamente:
-joaquim-volta-ao-sol.mp4
-
-O convite já aponta para esse caminho. Pode ser um MP4 H.264 para funcionar melhor em celulares e navegadores.
