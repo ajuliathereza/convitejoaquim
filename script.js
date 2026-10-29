@@ -571,7 +571,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    el.bgMusic.loop = false;
+    el.bgMusic.loop = true;
 
     el.bgMusic.volume = 0.01;
 
