@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     local: "Sítio Munay",
 
-   endereco: "Estrada Passo do Morrinho, 2000 — Porto Alegre/RS",
+   endereco: "Estrada Passo do Morrinho, 2000 — Viamão/RS",
 
 
     // IMPORTANTE:
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mapsLink: "",
 
-    mapsQuery: "Estrada Passo do Morrinho 2000, Porto Alegre, RS",
+    mapsQuery: "Estrada Passo do Morrinho 2000, Viamão, RS",
 
     // ÁLBUM
     // Quando tiver um álbum, cole o link.
